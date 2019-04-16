@@ -1,14 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { CardModule } from './modules/card/card.module';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
