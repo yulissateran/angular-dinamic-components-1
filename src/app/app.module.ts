@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 import { AppComponent } from './app.component';
 import { CardModule } from './modules/card/card.module';
-import { MessageComponent } from './components/message/message.component';
+import { DinamicFormModule } from './modules/dinamic-form/dinamic-form.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,9 @@ import { MessageComponent } from './components/message/message.component';
   ],
   imports: [
     BrowserModule,
-    CardModule
+    ReactiveFormsModule,
+    DinamicFormModule,
+    CardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

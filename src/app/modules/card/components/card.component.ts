@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
-import { MessageComponent } from '../message/message.component';
+// import { MessageComponent } from '../message/message.component';
 import { BehaviorSubject } from 'rxjs';
+import { MessageComponent } from 'app/modules/message/components/message.component';
 
 @Component({
   selector: 'app-card',

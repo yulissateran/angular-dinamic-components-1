@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MessageComponent } from 'app/components/message/message.component';
+import { MessageComponent } from './components/message.component';
 
 @NgModule({
   imports: [
