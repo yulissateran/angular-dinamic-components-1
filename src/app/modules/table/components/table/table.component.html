@@ -1,0 +1,31 @@
+<p>
+  table works!
+</p>
+<div class="test-container">
+  <div class="test-header">
+    Page Size:
+    <select #size (change)="onPageSizeChanged(size.value)" id="page-size">
+      <option value="10" selected="">10</option>
+      <option value="100">100</option>
+      <option value="500">500</option>
+      <option value="1000">1000</option>
+    </select>
+  </div>
+<button (click)="getSelectedRows()">Obtener Selected Rows</button>
+<button (click)="addRow()">add</button>
+<button (click)="deleteRow()">delete</button>
+<ag-grid-angular
+#agGrid 
+style="width: 605px; height: 500px;" 
+[context]="context"
+[frameworkComponents]="frameworkComponents"
+class="ag-theme-balham"
+[rowData]="rowData | async" 
+[columnDefs]="columnDefs"
+rowSelection="multiple"
+[pagination]="true"
+[paginationPageSize]="paginationPageSize"
+[paginationNumberFormatter]="paginationNumberFormatter"
+(gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>
